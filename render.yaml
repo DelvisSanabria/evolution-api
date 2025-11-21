@@ -29,7 +29,9 @@ services:
       # Crea una cuenta gratuita en MongoDB Atlas y pon la URL aquí:
       
       - key: DATABASE_ENABLED
-         value: "false"
+        value: "false"
+      - key: DATABASE_PROVIDER
+        value: "local"
       
       # Desactiva Redis para ahorrar memoria (usará memoria interna)
       - key: CACHE_REDIS_ENABLED
